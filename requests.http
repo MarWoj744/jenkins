@@ -1,0 +1,26 @@
+### Pobierz wszystkie produkty
+GET http://localhost:8080/api/products
+Accept: application/json
+
+### Pobierz produkt po ID
+GET http://localhost:8080/api/products/1
+Accept: application/json
+
+### Dodaj nowy produkt
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Nowy produkt"
+}
+
+### Zaktualizuj produkt
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Zmieniony produkt"
+}
+
+### Usuń produkt
+DELETE http://localhost:8080/api/products/1
